@@ -1,0 +1,13 @@
+body{
+    background-image:url(https://images.pexels.com/photos/5775/calculator-scientific.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+}
+
+h1{
+    font-family: sans-serif;
+    font-size: 50;
+    margin-left: 34vw;
+    margin-right: 42vw;
+    border-style: outset;
+    text-align: center;
+    background-color: darkorange; 
+}

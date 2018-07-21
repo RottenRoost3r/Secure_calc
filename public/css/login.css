@@ -1,0 +1,19 @@
+form{
+    text-align: center;
+    border-style: inset;
+    border-color: silver;
+    width: 22vw;
+    height: 18vw;
+    margin-left: 34vw;
+    margin-top: 8vw;
+    background-color: burlywood;
+}
+
+input{
+    margin-top: 1vw;
+}
+
+h2{
+    font-family: sans-serif;
+    font-size: 27px;
+}
