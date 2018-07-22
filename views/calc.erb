@@ -1,0 +1,42 @@
+<body>
+
+    <link rel="stylesheet" type="text/css" href="css/calc.css">
+
+    <form method="post" action="calculate">
+        
+        <div class="getnums">
+            <input type="number" placeholder="Number" name="val1" required>
+            <input type="number" placeholder="Number" name="val2" required>
+        </div>
+
+        <div class="opbuttons">
+            <button name="operation" type="Submit" value="add">+</button>
+            <button name="operation" type="Submit" value="subtract">-</button>
+            <button name="operation" type="Submit" value="multiply">*</button>
+            <button name="operation" type="Submit" value="divide">/</button>
+        </div>
+
+        <div class="answer">
+		    
+            <h3>
+			    <% unless val1 == ""%>
+			
+			        <% if result == false%>
+				        
+                        cannot divide by zero
+			        
+                    <% else%>
+
+				        <%= val1%> <%= operation%> <%= val2%> = <%= result%>
+			        
+                    <% end%>
+
+                <% end%>    
+			</h3>
+
+        </div>
+
+    </form>
+
+</body>
+

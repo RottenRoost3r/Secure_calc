@@ -37,9 +37,20 @@ post '/log' do
     
 		error = "Inavlid Password"
     erb :login, locals:{error: "Invalid Password"}
-    
+
   end
 end
 
 get "/calc" do
+
+  val1 = session[:val1] || ""
+  val2 = session[:val2] || ""
+  operation = session[:operation] || ""
+	result = session[:result] || false
+  erb :calc, locals:{result: result, val1: val1, val2: val2, operation: operation}
+
+end
+
+post '/calculate' do
+  
 end
