@@ -1,4 +1,4 @@
-def work1(operator, n1, n2)
+def work(operator, n1, n2)
 
     case operator.downcase
     when "add"
@@ -8,12 +8,12 @@ def work1(operator, n1, n2)
     when "multiply"
         result = n1.to_i * n2.to_i
     when "divide"
-        calc_div(n1, n2)
+        divfunk(n1, n2)
     end
     result
 end
 
-def work2(num1, num2)
+def divfunk(num1, num2)
     if num2.to_i == 0
         false
     else

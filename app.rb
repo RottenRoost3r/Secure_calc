@@ -52,5 +52,20 @@ get "/calc" do
 end
 
 post '/calculate' do
-  
+  session[:val1] = params[:val1]
+  session[:val2] = params[:val2]
+    
+  case params[:operation]
+  when "add"
+    session[:operation] = "+"
+  when "subtract"
+    session[:operation] = "-"
+  when "multiply"
+    session[:operation] = "*"
+  when "divide"
+    session[:operation] = "/"
+  end
+
+  session[:result] = work(params[:operation], params[:val1], params[:val2])
+  redirect '/calc'
 end
