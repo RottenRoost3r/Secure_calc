@@ -4,6 +4,8 @@
 
     <form method="post" action="calculate">
         
+        
+        <div class="boxy">
         <div class="getnums">
             <input type="number" placeholder="Number" name="val1" required>
             <input type="number" placeholder="Number" name="val2" required>
@@ -15,7 +17,8 @@
             <button name="operation" type="Submit" value="multiply">*</button>
             <button name="operation" type="Submit" value="divide">/</button>
         </div>
-
+        </div>
+        
         <div class="answer">
 		    
             <h3>
@@ -23,13 +26,13 @@
 			
 			        <% if result == false%>
 				        
-                        cannot divide by zero
+                        <% cannot divide by zero %>
 			        
                     <% else%>
 
 				        <%= val1%> <%= operation%> <%= val2%> = <%= result%>
 			        
-                    <% end%>
+                    <% end %>
 
                 <% end%>    
 			</h3>

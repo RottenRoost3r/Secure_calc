@@ -1,16 +1,22 @@
 form{
     text-align: center;
     border-style: inset;
-    border-color: silver;
+    border-color: darkorange;
     width: 22vw;
     height: 18vw;
     margin-left: 34vw;
     margin-top: 8vw;
-    background-color: burlywood;
+    background-color: darkblue;
+    color: darkorange;
 }
 
 input{
     margin-top: 1vw;
+    color: white;
+    border-color: darkorange;
+    background-color: black;
+    border-radius: 41%;
+    text-align: center;
 }
 
 h2{
