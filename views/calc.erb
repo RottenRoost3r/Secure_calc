@@ -1,3 +1,8 @@
+<head>
+    <div class="this">
+        <h2>Welcome <%=name%> <%=lastname%>, enjoy your calculations.</h2>
+    </div>
+</head>
 <body>
 
     <link rel="stylesheet" type="text/css" href="css/calc.css">
@@ -28,7 +33,7 @@
 			
 			        <% if result == false%>
 				        
-                        <% cannot divide by zero %>
+                        <%= "cannot divide by zero" %>
 			        
                     <% else%>
 
